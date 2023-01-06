@@ -30,3 +30,5 @@ RUN chmod a+x /usr/local/bin/docker_entrypoint.sh
 
 # TODO does this matter?  Can I just use the default.. like 5000?
 EXPOSE 8080
+
+ENTRYPOINT [ "python3", "-m", "/src/main.py" ]
